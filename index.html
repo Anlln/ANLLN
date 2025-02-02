@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>牽引神智慧環保出行系統！（OSM 版）</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>牽引神智慧環保出行系統！</h1>
+    </header>
+    <main>
+        <label for="start">出發地：</label>
+        <input type="text" id="start" placeholder="輸入出發地">
+
+        <label for="end">目的地：</label>
+        <input type="text" id="end" placeholder="輸入目的地">
+
+        <label for="transport">選擇交通工具：</label>
+        <label for="transport">選擇交通工具：</label>
+<select id="transport">
+    <option value="car">汽車（燃油）</option>
+    <option value="ev">電動車</option>
+    <option value="bus">公車</option>
+    <option value="bike">單車</option>
+    <option value="train">火車</option>
+    <option value="hsr">高鐵</option>
+    <option value="walk">步行</option>
+</select>
+
+
+        <button id="calculate">計算碳排放</button>
+
+        <h3>計算結果：</h3>
+        <p id="result">請輸入地點並按下計算。</p>
+    </main>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

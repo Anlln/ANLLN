@@ -1,0 +1,134 @@
+body {
+    background: rgb(109, 200, 236); /* 設定背景為純白 */
+}
+
+
+header {
+    background: #0288d1;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+main {
+    padding: 20px;
+}
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+main {
+    padding: 20px;
+}
+
+input, select, button {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+button {
+    cursor: pointer;
+    background-color: #0288d1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}
+td:nth-child(4) {
+    font-weight: bold;
+}
+
+td:nth-child(4):contains("超級環保") {
+    color: green;
+}
+td:nth-child(4):contains("低排放") {
+    color: blue;
+}
+td:nth-child(4):contains("中等排放") {
+    color: orange;
+}
+td:nth-child(4):contains("高排放") {
+    color: red;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #3cace9;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+/* 🔹 背景漸層 */
+body {
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+}
+
+/* 🔹 結果區塊動畫 */
+#result {
+    opacity: 0; /* 預設隱藏 */
+    transform: translateY(10px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #6fbde7;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+#result {
+    opacity: 0; /* 預設隱藏 */
+    transform: translateY(10px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
