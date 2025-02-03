@@ -6,19 +6,43 @@
     <title>牽引神智慧環保出行系統！（OSM 版）</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+
 <body>
     <header>
         <h1>牽引神智慧環保出行系統！</h1>
     </header>
     <main>
         <label for="start">出發地：</label>
-        <input type="text" id="start" placeholder="輸入出發地">
+<input type="text" id="start" placeholder="輸入出發地">
+<div id="start-suggestions" class="autocomplete-dropdown"></div>
 
-        <label for="end">目的地：</label>
-        <input type="text" id="end" placeholder="輸入目的地">
+<label for="end">目的地：</label>
+<input type="text" id="end" placeholder="輸入目的地">
+<div id="end-suggestions" class="autocomplete-dropdown"></div>
+
 
         <label for="transport">選擇交通工具：</label>
         <label for="transport">選擇交通工具：</label>
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+        <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+         
+<footer>
+    <p>本系統使用 OpenStreetMap (OSM) 提供環保出行建議。</p>
+    </footer>
+<footer>
+        <p>
+            本系統使用 OpenStreetMap (OSM) 提供環保出行建議，
+            <a href="#" id="toggleInfo">點擊這裡查看更多資訊</a>。
+        </p>
+        <p id="extraInfo" class="hidden">
+            🌍「智慧環保出行系統」是一款由兩位高中生與指導老師共同開發的AI應用，
+            透過即時交通數據與碳排放計算，提供最佳路徑規劃與環保出行選擇，降低碳排放，提升城市交通效率，促進綠色永續發展。
+            
+        </p>
+    </footer>
+            
 <select id="transport">
     <option value="car">汽車（燃油）</option>
     <option value="ev">電動車</option>
@@ -38,5 +62,6 @@
 
     <script src="script.js"></script>
     
-</body>
+<p id="info">建議輸入完整地址。</p>
+
 </html>

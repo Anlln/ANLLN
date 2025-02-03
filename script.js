@@ -122,3 +122,15 @@ async function getDistance(startCoords, endCoords) {
     let data = await response.json();
     return data.routes.length > 0 ? data.routes[0].distance / 1000 : null;
 }
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("toggleInfo").addEventListener("click", function(event) {
+        event.preventDefault(); // 防止跳轉
+        let info = document.getElementById("extraInfo");
+        info.classList.toggle("hidden"); // 切換顯示/隱藏狀態
+
+        // 切換按鈕文字
+        this.innerText = info.classList.contains("hidden") ? "點擊這裡查看更多資訊" : "隱藏資訊";
+    });
+});
+
+

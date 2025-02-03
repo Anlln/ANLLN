@@ -132,3 +132,52 @@ tr:hover {
     transform: translateY(10px);
     transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
+.autocomplete-dropdown {
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    width: 200px;
+    z-index: 1000;
+}
+
+.autocomplete-item {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.autocomplete-item:hover {
+    background: #f0f0f0;
+}
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.hidden {
+    display: none; /* 預設隱藏 */
+}
+
+#extraInfo {
+    background: #000000;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease-in-out;
+}
+#toggleInfo {
+    color: white;
+    text-decoration: underline; /* 保持超連結樣式 */
+    cursor: pointer;
+}
+
+#toggleInfo:hover {
+    color: #ddd; /* 滑鼠移上去時變淺色 */
+}
